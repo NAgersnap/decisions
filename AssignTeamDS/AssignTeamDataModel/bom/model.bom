@@ -1,0 +1,48 @@
+
+package cp4admin.assign_team.assignteamds.assignteamdatamodel;
+
+
+public class AssignTeam
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "assignTeam"
+        property "de.generated" "true"
+{
+    public string comment
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "comment"
+                property update "true";
+    public boolean decision
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "decision"
+                property update "true";
+    public AssignTeam(string comment, boolean decision)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public AssignTeam()
+                property "dataio.default" "true";
+}
+
+public class Ticket
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "ticket"
+        property "de.generated" "true"
+{
+    public string @class
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "class"
+                property update "true";
+    public string number
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "number"
+                property update "true";
+    public Ticket(string @class, string number)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Ticket()
+                property "dataio.default" "true";
+}
+
