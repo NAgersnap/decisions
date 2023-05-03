@@ -1,16 +1,11 @@
 
 # cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam
 cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam#concept.label = assignTeam
-cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.AssignTeam(java.lang.String,boolean)#phrase.navigation = a new {assignTeam} where {0, comment} {1, decision}
+cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.AssignTeam(java.lang.String,java.lang.String)#phrase.navigation = a new {assignTeam} where {0, comment} {1, teamAssignment}
 cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.comment#phrase.action = set the comment of {this} to {comment}
 cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.comment#phrase.navigation = {comment} of {this}
-cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.decision#phrase.action[0] = {this} gets decision only if {decision}
-cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.decision#phrase.action[1] = make it {decision} that {this} is decision
-cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.decision#phrase.action[1].deprecated = true
-cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.decision#phrase.navigation = {this} is decision
-cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.decision#phrase.negative_predicate = {this} is not decision
-cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.decision#phrase.negative_predicate_setter = {this} does not get decision
-cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.decision#phrase.positive_predicate_setter = {this} gets decision
+cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.teamAssignment#phrase.action = set the teamAssignment of {this} to {teamAssignment}
+cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam.teamAssignment#phrase.navigation = {teamAssignment} of {this}
 
 # cp4admin.assign_team.assignteamds.assignteamdatamodel.Ticket
 cp4admin.assign_team.assignteamds.assignteamdatamodel.Ticket#concept.label = ticket

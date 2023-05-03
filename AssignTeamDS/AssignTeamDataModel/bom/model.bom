@@ -11,11 +11,11 @@ public class AssignTeam
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "comment"
                 property update "true";
-    public boolean decision
+    public string teamAssignment
                 property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "decision"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "teamAssignment"
                 property update "true";
-    public AssignTeam(string comment, boolean decision)
+    public AssignTeam(string comment, string teamAssignment)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"
