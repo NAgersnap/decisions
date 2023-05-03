@@ -13,7 +13,12 @@
     <dependencies>
         <dependency>
             <groupId>12345</groupId>
-            <artifactId>ticket</artifactId>
+            <artifactId>teamAssignmentModel</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>12345</groupId>
+            <artifactId>decisionData</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -75,6 +80,9 @@
         </profile>
     </profiles>
 
+
+
+
 <build>
         <resources>
             <resource>
@@ -101,7 +109,16 @@
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>12345</groupId>
-                                    <artifactId>ticket</artifactId>
+                                    <artifactId>teamAssignmentModel</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>12345</groupId>
+                                    <artifactId>decisionData</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

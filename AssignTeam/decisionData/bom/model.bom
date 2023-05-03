@@ -7,11 +7,15 @@ public class Assignment
         property "com.fasterxml.jackson.annotation.JsonTypeName" "Assignment"
         property "de.generated" "true"
 {
+    public string comment
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "comment"
+                property update "true";
     public string teamAssignment
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "teamAssignment"
                 property update "true";
-    public Assignment(string teamAssignment)
+    public Assignment(string comment, string teamAssignment)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"

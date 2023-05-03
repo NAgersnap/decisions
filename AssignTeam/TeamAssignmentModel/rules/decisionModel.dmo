@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>2942568c-664f-4466-94e4-9101aedc4966</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <decision id="node_1" name="Decision">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.assign_team.assignteam.ticket.Ticket" collection="false" name="Input"/>
+                <output bomType="cp4admin.assign_team.assignteam.ticket.Assignment" collection="false" name="Decision"/>
+                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_1/TeamAssignmentTable.dmt" kind="DecisionTable" name="TeamAssignmentTable"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Decision" typeRef="cp4admin.assign_team.assignteam.ticket.Assignment"/>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Input">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.assign_team.assignteam.ticket.Ticket" collection="false" name="Input"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Input" typeRef="cp4admin.assign_team.assignteam.ticket.Ticket"/>
+    </inputData>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

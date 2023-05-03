@@ -64,7 +64,8 @@
     </dependencyManagement>
     <modules>
         <module>.decisionservice</module>
-        <module>Ticket</module>
+        <module>TeamAssignmentModel</module>
+        <module>decisionData</module>
     </modules>
 
     <build>

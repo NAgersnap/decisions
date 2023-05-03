@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="12345:ticket" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.assign_team.assignteam.ticket" managingXom="true">
-  <name>Ticket</name>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="12345:decisionData" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.assign_team.assignteam.ticket" managingXom="true">
+  <name>decisionData</name>
   <uuid>ece79323-b570-4b6d-b09c-2e34efa17523</uuid>
   <locales>en_US</locales>
   <versionPolicies label="Increment minor version numbers" ruleset="INCREMENT_MINOR" default="true" recurrent="true">

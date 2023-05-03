@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.base:RuleProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore" xmlns:ilog.rules.studio.model.bom="http://ilog.rules.studio/model/bom.ecore" xmlns:ilog.rules.studio.model.query="http://ilog.rules.studio/model/query.ecore" xmlns:ilog.rules.studio.model.xom="http://ilog.rules.studio/model/xom.ecore" buildMode="DecisionEngine" isADecisionService="true" projectKind="DecisionModel" projectVersion="1.0.0">
-  <name>Ticket</name>
-  <uuid>ca07d6d3-e08f-45fa-88ed-40470b04d311</uuid>
+  <name>TeamAssignmentModel</name>
+  <uuid>d886bf26-f5c2-4648-afbf-036f76610f37</uuid>
   <outputLocation>output</outputLocation>
   <categories>any</categories>
   <paths xsi:type="ilog.rules.studio.model.xom:XOMPath" pathID="XOM">
     <entries xsi:type="ilog.rules.studio.model.xom:LibraryXOMPathEntry" name="org.eclipse.jdt.launching.JRE_CONTAINER" url="file:org.eclipse.jdt.launching.JRE_CONTAINER" kind="LIBRARY"/>
   </paths>
   <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM">
-    <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="model" url="platform:/Ticket/bom/model.bom"/>
+    <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="12345:decisionData#LATEST-SNAPSHOT" packageId="12345:decisionData" version="LATEST-SNAPSHOT"/>
   </paths>
   <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
     <name>rules</name>
@@ -31,5 +31,5 @@
   <modelFolders xsi:type="com.ibm.rules.studio.model.decisionservice:OperationFolder">
     <name>deployment</name>
   </modelFolders>
-  <documentation><![CDATA[The high level content of the ticket]]></documentation>
+  <documentation><![CDATA[]]></documentation>
 </ilog.rules.studio.model.base:RuleProject>

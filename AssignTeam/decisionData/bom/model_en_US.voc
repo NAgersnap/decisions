@@ -2,7 +2,9 @@
 # cp4admin.assign_team.assignteam.ticket.Assignment
 cp4admin.assign_team.assignteam.ticket.Assignment#concept.documentation = 
 cp4admin.assign_team.assignteam.ticket.Assignment#concept.label = Assignment
-cp4admin.assign_team.assignteam.ticket.Assignment.Assignment(java.lang.String)#phrase.navigation = a new {Assignment} where {0, teamAssignment}
+cp4admin.assign_team.assignteam.ticket.Assignment.Assignment(java.lang.String,java.lang.String)#phrase.navigation = a new {Assignment} where {0, comment} {1, teamAssignment}
+cp4admin.assign_team.assignteam.ticket.Assignment.comment#phrase.action = set the comment of {this} to {comment}
+cp4admin.assign_team.assignteam.ticket.Assignment.comment#phrase.navigation = {comment} of {this}
 cp4admin.assign_team.assignteam.ticket.Assignment.teamAssignment#phrase.action = set the teamAssignment of {this} to {teamAssignment}
 cp4admin.assign_team.assignteam.ticket.Assignment.teamAssignment#phrase.navigation = {teamAssignment} of {this}
 

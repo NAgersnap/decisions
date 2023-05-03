@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>12345</groupId>
-    <artifactId>ticket</artifactId>
+    <artifactId>teamAssignmentModel</artifactId>
     <version>LATEST-SNAPSHOT</version>
 
     <build>
@@ -26,16 +26,21 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>Ticket</name>
+                            <name>TeamAssignmentModel</name>
                         </deployment>
                     </deployments>
-                <packageName>cp4admin.assign_team.assignteam.ticket</packageName>
+                <packageName>cp4admin.assign_team.assignteam.teamassignmentmodel</packageName>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
 <dependencies>
+        <dependency>
+            <groupId>12345</groupId>
+            <artifactId>decisionData</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
