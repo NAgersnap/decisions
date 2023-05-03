@@ -1,0 +1,46 @@
+
+# cp4admin.assign_team.assignteam.ticket.Assignment
+cp4admin.assign_team.assignteam.ticket.Assignment#concept.documentation = 
+cp4admin.assign_team.assignteam.ticket.Assignment#concept.label = Assignment
+cp4admin.assign_team.assignteam.ticket.Assignment.Assignment(java.lang.String)#phrase.navigation = a new {Assignment} where {0, teamAssignment}
+cp4admin.assign_team.assignteam.ticket.Assignment.teamAssignment#phrase.action = set the teamAssignment of {this} to {teamAssignment}
+cp4admin.assign_team.assignteam.ticket.Assignment.teamAssignment#phrase.navigation = {teamAssignment} of {this}
+
+# cp4admin.assign_team.assignteam.ticket.Severity
+cp4admin.assign_team.assignteam.ticket.Severity#concept.label = severity
+cp4admin.assign_team.assignteam.ticket.Severity.howTo#instance.label = how to
+cp4admin.assign_team.assignteam.ticket.Severity.sev1#instance.label = sev 1
+cp4admin.assign_team.assignteam.ticket.Severity.sev2#instance.label = sev 2
+cp4admin.assign_team.assignteam.ticket.Severity.sev3#instance.label = sev 3
+cp4admin.assign_team.assignteam.ticket.Severity.sev4#instance.label = sev 4
+
+# cp4admin.assign_team.assignteam.ticket.State
+cp4admin.assign_team.assignteam.ticket.State#concept.label = state
+cp4admin.assign_team.assignteam.ticket.State.assigned#instance.label = assigned
+cp4admin.assign_team.assignteam.ticket.State.closed#instance.label = closed
+cp4admin.assign_team.assignteam.ticket.State.deferred#instance.label = deferred
+cp4admin.assign_team.assignteam.ticket.State.opened#instance.label = opened
+cp4admin.assign_team.assignteam.ticket.State.underInvestigation#instance.label = under investigation
+
+# cp4admin.assign_team.assignteam.ticket.Ticket
+cp4admin.assign_team.assignteam.ticket.Ticket#concept.documentation = 
+cp4admin.assign_team.assignteam.ticket.Ticket#concept.label = Ticket
+cp4admin.assign_team.assignteam.ticket.Ticket.Ticket(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,cp4admin.assign_team.assignteam.ticket.Severity,cp4admin.assign_team.assignteam.ticket.State,java.lang.String)#phrase.navigation = a new {Ticket} where {0, caller} {1, class} {2, description} {3, environment} {4, riskId} {5, severity} {6, state} {7, ticketNumber}
+cp4admin.assign_team.assignteam.ticket.Ticket.caller#phrase.action = set the caller of {this} to {caller}
+cp4admin.assign_team.assignteam.ticket.Ticket.caller#phrase.navigation = {caller} of {this}
+cp4admin.assign_team.assignteam.ticket.Ticket.class#phrase.action = set the class of {this} to {class}
+cp4admin.assign_team.assignteam.ticket.Ticket.class#phrase.navigation = {class} of {this}
+cp4admin.assign_team.assignteam.ticket.Ticket.description#phrase.action = set the description of {this} to {description}
+cp4admin.assign_team.assignteam.ticket.Ticket.description#phrase.navigation = {description} of {this}
+cp4admin.assign_team.assignteam.ticket.Ticket.environment#phrase.action = set the environment of {this} to {environment}
+cp4admin.assign_team.assignteam.ticket.Ticket.environment#phrase.navigation = {environment} of {this}
+cp4admin.assign_team.assignteam.ticket.Ticket.riskId#phrase.action = set the riskId of {this} to {riskId}
+cp4admin.assign_team.assignteam.ticket.Ticket.riskId#phrase.navigation = {riskId} of {this}
+cp4admin.assign_team.assignteam.ticket.Ticket.severity#phrase.action = set the severity of {this} to {severity}
+cp4admin.assign_team.assignteam.ticket.Ticket.severity#phrase.clearer = clear the severity of {this}
+cp4admin.assign_team.assignteam.ticket.Ticket.severity#phrase.navigation = {severity} of {this}
+cp4admin.assign_team.assignteam.ticket.Ticket.state#phrase.action = set the state of {this} to {state}
+cp4admin.assign_team.assignteam.ticket.Ticket.state#phrase.clearer = clear the state of {this}
+cp4admin.assign_team.assignteam.ticket.Ticket.state#phrase.navigation = {state} of {this}
+cp4admin.assign_team.assignteam.ticket.Ticket.ticketNumber#phrase.action = set the ticketNumber of {this} to {ticketNumber}
+cp4admin.assign_team.assignteam.ticket.Ticket.ticketNumber#phrase.navigation = {ticketNumber} of {this}
