@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cp4admin.assign_team.assignteamds</groupId>
-    <artifactId>assignTeamDS</artifactId>
+    <groupId>cp4admin.niels_sandbox.snow_assignteamds</groupId>
+    <artifactId>SNOW_AssignTeamDS</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>AssignTeamDS</name>
+    <name>SNOW_AssignTeamDS</name>
 
     <packaging>pom</packaging>
 
@@ -63,8 +63,8 @@
     </dependencyManagement>
     <modules>
         <module>.decisionservice</module>
-        <module>AssignTeamDM</module>
-        <module>AssignTeamDataModel</module>
+        <module>AT_DM</module>
+        <module>TeamassignmentDM</module>
     </modules>
 
     <build>

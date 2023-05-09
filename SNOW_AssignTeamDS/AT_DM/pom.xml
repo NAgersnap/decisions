@@ -2,13 +2,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>cp4admin.assign_team.assignteamds</groupId>
-        <artifactId>assignTeamDS</artifactId>
+        <groupId>cp4admin.niels_sandbox.snow_assignteamds</groupId>
+        <artifactId>SNOW_AssignTeamDS</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>cp4admin.assign_team.assignteamds</groupId>
-    <artifactId>assignTeamDM</artifactId>
+    <groupId>cp4admin.niels_sandbox.snow_assignteamds</groupId>
+    <artifactId>AT_DM</artifactId>
     <version>LATEST-SNAPSHOT</version>
 
     <build>
@@ -26,21 +26,16 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>AssignTeamDM</name>
+                            <name>AT_DM</name>
                         </deployment>
                     </deployments>
-                <packageName>cp4admin.assign_team.assignteamds.assignteamdm</packageName>
+                <packageName>cp4admin.niels_sandbox.snow_assignteamds.at_dm</packageName>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
 <dependencies>
-        <dependency>
-            <groupId>cp4admin.assign_team.assignteamds</groupId>
-            <artifactId>assignTeamDataModel</artifactId>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>

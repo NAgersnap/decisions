@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="cp4admin.assign_team.assignteamds:assignTeamDM" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.assign_team.assignteamds.assignteamdm" managingXom="true">
-  <name>AssignTeamDM</name>
-  <uuid>03cf8ac3-6692-4375-9786-920cac9abf22</uuid>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="cp4admin.niels_sandbox.snow_assignteamds:AT_DM" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.niels_sandbox.snow_assignteamds.at_dm" managingXom="true">
+  <name>AT_DM</name>
+  <uuid>c0219094-b9bb-476d-93b3-51d34435c2df</uuid>
   <locales>en_US</locales>
-  <operations operationName="operation">
-    <operation href="operation.dop#20d71361-583b-4eb8-a643-5659acf4952e"/>
-    <properties key="ruleset.version">
-      <value><![CDATA[1.0]]></value>
-    </properties>
-  </operations>
   <versionPolicies label="Increment minor version numbers" ruleset="INCREMENT_MINOR" default="true" recurrent="true">
     <description><![CDATA[Updates the minor version for each ruleset. Makes the new version available but retains previous versions.]]></description>
   </versionPolicies>

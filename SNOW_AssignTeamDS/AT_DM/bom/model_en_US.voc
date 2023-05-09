@@ -1,0 +1,67 @@
+
+# cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData#concept.label = decisionData
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData.DecisionData(cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams,java.lang.String)#phrase.navigation = a new {decisionData} where {0, assignedTeam} {1, comment}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData.assignedTeam#phrase.action = set the assignedTeam of {this} to {assignedTeam}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData.assignedTeam#phrase.clearer = clear the assignedTeam of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData.assignedTeam#phrase.navigation = {assignedTeam} of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData.comment#phrase.action = set the comment of {this} to {comment}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData.comment#phrase.navigation = {comment} of {this}
+
+# cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment#concept.label = environment
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment.AS400#instance.label = AS400
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment.ZOS#instance.label = zOS
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment.linux#instance.label = Linux
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment.mac#instance.label = Mac
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment.windows#instance.label = Windows
+
+# cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity#concept.label = severity
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity.$#instance.label = 1
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity.$1#instance.label = 2
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity.$2#instance.label = 3
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity.$3#instance.label = 4
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity.howTo$#instance.label = How to?
+
+# cp4admin.niels_sandbox.snow_assignteamds.at_dm.State
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.State#concept.label = state
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.State.closed#instance.label = closed
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.State.deferred#instance.label = deferred
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.State.inProcess#instance.label = inProcess
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.State.opened#instance.label = opened
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.State.rejected#instance.label = rejected
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.State.reopened#instance.label = reopened
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.State.teamAssigned#instance.label = teamAssigned
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.State.validated#instance.label = validated
+
+# cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams#concept.label = teams
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams.desktop#instance.label = Desktop
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams.exception#instance.label = Exception
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams.facility#instance.label = Facility
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams.labserver#instance.label = Labserver
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams.process#instance.label = Process
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams.security#instance.label = Security
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams.software#instance.label = Software
+
+# cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData#concept.label = ticketData
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.TicketData(java.lang.String,cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment,java.lang.String,cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity,cp4admin.niels_sandbox.snow_assignteamds.at_dm.State,java.lang.String,java.lang.String)#phrase.navigation = a new {ticketData} where {0, domain} {1, environment} {2, riskId} {3, severity} {4, state} {5, summary} {6, ticketNumber}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.domain#phrase.action = set the domain of {this} to {domain}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.domain#phrase.navigation = {domain} of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.environment#phrase.action = set the environment of {this} to {environment}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.environment#phrase.clearer = clear the environment of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.environment#phrase.navigation = {environment} of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.riskId#phrase.action = set the riskId of {this} to {riskId}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.riskId#phrase.navigation = {riskId} of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.severity#phrase.action = set the severity of {this} to {severity}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.severity#phrase.clearer = clear the severity of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.severity#phrase.navigation = {severity} of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.state#phrase.action = set the state of {this} to {state}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.state#phrase.clearer = clear the state of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.state#phrase.navigation = {state} of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.summary#phrase.action = set the summary of {this} to {summary}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.summary#phrase.navigation = {summary} of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.ticketNumber#phrase.action = set the ticketNumber of {this} to {ticketNumber}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData.ticketNumber#phrase.navigation = {ticketNumber} of {this}

@@ -2,23 +2,23 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>cp4admin.assign_team.assignteamds</groupId>
-        <artifactId>assignTeamDS</artifactId>
+        <groupId>cp4admin.niels_sandbox.snow_assignteamds</groupId>
+        <artifactId>SNOW_AssignTeamDS</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>assignTeamDSDecisionService</artifactId>
+    <artifactId>SNOW_AssignTeamDSDecisionService</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>cp4admin.assign_team.assignteamds</groupId>
-            <artifactId>assignTeamDM</artifactId>
+            <groupId>cp4admin.niels_sandbox.snow_assignteamds</groupId>
+            <artifactId>AT_DM</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>cp4admin.assign_team.assignteamds</groupId>
-            <artifactId>assignTeamDataModel</artifactId>
+            <groupId>cp4admin.niels_sandbox.snow_assignteamds</groupId>
+            <artifactId>teamassignmentDM</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -81,6 +81,7 @@
     </profiles>
 
 
+
 <build>
         <resources>
             <resource>
@@ -106,8 +107,8 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>cp4admin.assign_team.assignteamds</groupId>
-                                    <artifactId>assignTeamDM</artifactId>
+                                    <groupId>cp4admin.niels_sandbox.snow_assignteamds</groupId>
+                                    <artifactId>AT_DM</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
@@ -115,8 +116,8 @@
                                     <outputDirectory>${project.build.directory}/classes</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>cp4admin.assign_team.assignteamds</groupId>
-                                    <artifactId>assignTeamDataModel</artifactId>
+                                    <groupId>cp4admin.niels_sandbox.snow_assignteamds</groupId>
+                                    <artifactId>teamassignmentDM</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

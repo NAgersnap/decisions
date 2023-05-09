@@ -1,0 +1,179 @@
+
+package cp4admin.niels_sandbox.snow_assignteamds.at_dm;
+
+
+public class DecisionData
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "decisionData"
+        property "de.generated" "true"
+{
+    public cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams assignedTeam
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "assignedTeam"
+                property update "true";
+    public string comment
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "comment"
+                property update "true";
+    public DecisionData(cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams assignedTeam, string comment)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public DecisionData()
+                property "dataio.default" "true";
+}
+
+public class Environment
+        extends java.lang.Enum
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "environment"
+        property "de.generated" "true"
+{
+    domain {static AS400, static ZOS, static linux, static mac, static windows}
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment AS400
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AS400";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment ZOS
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "zOS";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment linux
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Linux";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment mac
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Mac";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment windows
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Windows";
+}
+
+public class Severity
+        extends java.lang.Enum
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "severity"
+        property "de.generated" "true"
+{
+    domain {static $, static $1, static $2, static $3, static howTo$}
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity $
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "1";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity $1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "2";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity $2
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "3";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity $3
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "4";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity howTo$
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HowTo?";
+}
+
+public class State
+        extends java.lang.Enum
+        property "ads.typeId" "5"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "state"
+        property "de.generated" "true"
+{
+    domain {static closed, static deferred, static inProcess, static opened, static rejected, static reopened, static teamAssigned, static validated}
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.State closed
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "closed";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.State deferred
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "deferred";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.State inProcess
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "inProcess";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.State opened
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "opened";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.State rejected
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "rejected";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.State reopened
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "reopened";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.State teamAssigned
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "teamAssigned";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.State validated
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "validated";
+}
+
+public class Teams
+        extends java.lang.Enum
+        property "ads.typeId" "6"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "teams"
+        property "de.generated" "true"
+{
+    domain {static desktop, static exception, static facility, static labserver, static process, static security, static software}
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams desktop
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Desktop";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams exception
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Exception";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams facility
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Facility";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams labserver
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Labserver";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams process
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Process";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams security
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Security";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.Teams software
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Software";
+}
+
+public class TicketData
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "ticketData"
+        property "de.generated" "true"
+{
+    public string @domain
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "domain"
+                property update "true";
+    public cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment environment
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "environment"
+                property update "true";
+    public string riskId
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "riskId"
+                property update "true";
+    public cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity severity
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "severity"
+                property update "true";
+    public cp4admin.niels_sandbox.snow_assignteamds.at_dm.State state
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "state"
+                property update "true";
+    public string summary
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "summary"
+                property update "true";
+    public string ticketNumber
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ticketNumber"
+                property update "true";
+    public TicketData(string @domain, cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment environment, string riskId, cp4admin.niels_sandbox.snow_assignteamds.at_dm.Severity severity, cp4admin.niels_sandbox.snow_assignteamds.at_dm.State state, string summary, string ticketNumber)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public TicketData()
+                property "dataio.default" "true";
+}
+

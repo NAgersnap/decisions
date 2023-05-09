@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
   <name>decisionModel</name>
-  <uuid>5f6787ca-b3f8-4ab7-8592-9b5a24f67043</uuid>
+  <uuid>59086942-780c-49df-9b83-225c97b9fe41</uuid>
   <locale>en_US</locale>
   <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
     <extensionElements>
@@ -10,20 +10,22 @@
     <inputData id="node_0" name="Input">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="cp4admin.assign_team.assignteamds.assignteamdatamodel.Ticket" collection="false" name="Input"/>
+                <output bomType="cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData" collection="false" name="Input"/>
             </initialization>
         </extensionElements>
-        <variable id="node_0_ii" name="Input" typeRef="cp4admin.assign_team.assignteamds.assignteamdatamodel.Ticket"/>
+        <variable id="node_0_ii" name="Input" typeRef="cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData"/>
     </inputData>
     <decision id="node_1" name="Decision">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="cp4admin.assign_team.assignteamds.assignteamdatamodel.Ticket" collection="false" name="Input"/>
-                <output bomType="cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam" collection="false" name="Decision"/>
-                <rule defaultRule="false" href="node_1/test.dmt" kind="DecisionTable" name="test"/>
+                <input bomType="cp4admin.niels_sandbox.snow_assignteamds.at_dm.TicketData" collection="false" name="Input"/>
+                <output bomType="cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData" collection="false" name="Decision"/>
+                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_1/severity%201%20rule.drl" kind="BusinessRule" name="severity 1 rule"/>
+                <rule defaultRule="false" href="node_1/assignTeamRule.dmt" kind="DecisionTable" name="assignTeamRule"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_1_ii" name="Decision" typeRef="cp4admin.assign_team.assignteamds.assignteamdatamodel.AssignTeam"/>
+        <variable id="node_1_ii" name="Decision" typeRef="cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
