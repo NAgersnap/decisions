@@ -8,6 +8,24 @@ cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData.assignedTeam#phrase.
 cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData.comment#phrase.action = set the comment of {this} to {comment}
 cp4admin.niels_sandbox.snow_assignteamds.at_dm.DecisionData.comment#phrase.navigation = {comment} of {this}
 
+# cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel#concept.label = empLevel
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel.c$level#instance.label = c-level
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel.junior#instance.label = junior
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel.manager#instance.label = manager
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel.regular#instance.label = regular
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel.senior#instance.label = senior
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel.trainee#instance.label = trainee
+
+# cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmployeeData
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmployeeData#concept.label = employeeData
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmployeeData.EmployeeData(java.lang.String,cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel)#phrase.navigation = a new {employeeData} where {0, employeeNumber} {1, level}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmployeeData.employeeNumber#phrase.action = set the employeeNumber of {this} to {employeeNumber}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmployeeData.employeeNumber#phrase.navigation = {employeeNumber} of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmployeeData.level#phrase.action = set the level of {this} to {level}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmployeeData.level#phrase.clearer = clear the level of {this}
+cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmployeeData.level#phrase.navigation = {level} of {this}
+
 # cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment
 cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment#concept.label = environment
 cp4admin.niels_sandbox.snow_assignteamds.at_dm.Environment.AS400#instance.label = AS400

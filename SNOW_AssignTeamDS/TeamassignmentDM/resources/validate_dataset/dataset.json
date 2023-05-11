@@ -1,1 +1,1 @@
-{"operationId":"11d7266e-f50a-4c29-b1e0-3ba962213a09","body":"{\"input\":{\"domain\":\"Building\",\"environment\":\"Mac\",\"riskId\":\"R44\",\"severity\":\"2\",\"state\":\"deferred\",\"summary\":\"Need team assignment\",\"ticketNumber\":\"ICN234354\"}}"}
+{"operationId":"11d7266e-f50a-4c29-b1e0-3ba962213a09","body":"{\"input\":{\"domain\":\"Building\",\"environment\":\"Mac\",\"riskId\":\"R44\",\"severity\":\"1\",\"state\":\"deferred\",\"summary\":\"Need team assignment\",\"ticketNumber\":\"ICN234354\"}}"}

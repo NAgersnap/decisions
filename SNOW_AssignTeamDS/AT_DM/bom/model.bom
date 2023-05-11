@@ -24,6 +24,55 @@ public class DecisionData
                 property "dataio.default" "true";
 }
 
+public class EmpLevel
+        extends java.lang.Enum
+        property "ads.typeId" "8"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "empLevel"
+        property "de.generated" "true"
+{
+    domain {static c$level, static junior, static manager, static regular, static senior, static trainee}
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel c$level
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "c-level";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel junior
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "junior";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel manager
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "manager";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel regular
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "regular";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel senior
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "senior";
+    public static final readonly cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel trainee
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "trainee";
+}
+
+public class EmployeeData
+        property "ads.typeId" "7"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "employeeData"
+        property "de.generated" "true"
+{
+    public string employeeNumber
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "employeeNumber"
+                property update "true";
+    public cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel level
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "level"
+                property update "true";
+    public EmployeeData(string employeeNumber, cp4admin.niels_sandbox.snow_assignteamds.at_dm.EmpLevel level)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public EmployeeData()
+                property "dataio.default" "true";
+}
+
 public class Environment
         extends java.lang.Enum
         property "ads.typeId" "4"
